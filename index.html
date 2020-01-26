@@ -1,12 +1,207 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+   <meta charset="utf-8">
+   <title>Интернет магазин "DEVICE"</title>
+</head>
 
-  </body>
+<body>
+
+   <header>
+      <a><img src="img/logo.png" width="163" height="35"></a href="index.html">
+      <nav>
+         <ul>
+            <li><button type="button">Поиск по сайту</button></li>
+            <li><button type="button">Валентин Петухов</button></li>
+            <li><button type="button">Выйти</button></li>
+            <li><button type="button">Войти</button></li>
+            <li><button type="button">Сравнить</button></li>
+            <li><a href="basket.html">Корзина</a></li>
+         </ul>
+      </nav>
+      <nav>
+         <ul>
+            <li><a href="catalog.html">КАТАЛОГ ТОВАРОВ</a></li>
+            <li><a href="delivery.html">ДОСТАВКА</a></li>
+            <li><a href="warranty.html">ГАРАНТИЯ</a></li>
+            <li><a href="contacts.html">КОНТАКТЫ</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <main>
+
+      <h1>Интернет магазин "DEVICE"</h1>
+
+      <section id="slider1">
+         <img src="img/slider-1.png" width="384" height="486">
+         <h2>Делай селфи, как Бен Стиллер!</h2>
+         <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
+         <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 киллограмм</p>
+
+         <button type="button">ПОДРОБНЕЕ</button>
+
+         <ul>
+            <li>8,5 м<span>Длина палки</span></li>
+            <li>5 кг<span>Вес палки</span></li>
+            <li>Карбон<span>Материал</span></li>
+         </ul>
+      </section>
+
+      <section id="slider2">
+         <img src="img/slider-2.png" width="345" height="485">
+         <h2>Худеем<br>правльно!</h2>
+         <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+
+         <button type="button">ПОДРОБНЕЕ</button>
+
+         <ul>
+            <li>48 часов<span>Без подзарядки</span></li>
+         </ul>
+      </section>
+
+      <section id="slider3">
+         <img src="img/slider-3.png" width="526" height="334">
+         <h2>Пархает как бабочка, жалит как пчела!</h2>
+         <p>Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскерованный под стандартную камеру.
+         </p>
+
+         <button type="button">ПОДРОБНЕЕ</button>
+
+         <ul>
+            <li>800 м<span>дальность полета</span></li>
+            <li>50 м<span>Радиус поражения</span></li>
+         </ul>
+      </section>
+
+      <section>
+         <h2>Популярные категории</h2>
+
+         <ul>
+            <li><a href="#">
+                  <div><img src="/img/popular-1.png"></div>
+                  <p>Виртуальная реальность</p>
+               </a></li>
+            <li><a href="#">
+                  <div><img src="/img/popular-2.png"></div>
+                  <p>Моноподы для селфи</p>
+               </a></li>
+            <li><a href="#">
+                  <div><img src="/img/popular-3.png"></div>
+                  <p>Экшшн-камеры</p>
+               </a></li>
+            <li><a href="#">
+                  <div><img src="/img/popular-4.png"></div>
+                  <p>Фитнес-браслеты</p>
+               </a></li>
+            <li><a href="#">
+                  <div><img src="/img/popular-5.png"></div>
+                  <p>Умные часы</p>
+               </a></li>
+            <li><a href="#">
+                  <div><img src="/img/popular-6.png"></div>
+                  <p>Квадракоптеры</p>
+               </a></li>
+         </ul>
+      </section>
+
+      <section>
+         <h2>Дополнительные услуги</h2>
+
+         <input type="radio" id="services-tab1" checked>
+         <label for="services-tab1">ДОСТАВКА</label>
+
+         <input type="radio" id="services-tab2">
+         <label for="services-tab2">ГАРАНТИЯ</label>
+
+         <input type="radio" id="services-tab3">
+         <label for="services-tab3">КРЕДИТ</label>
+
+         <section id="services-tab1-content">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+               заработает, поднимая его на ваш этаж.</p>
+         </section>
+         <section id="services-tab2-content">
+            <h3>Гарантия</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам
+               новый.<br>Товар, не дом конечно же</p>
+         </section>
+         <section id="services-tab3-content">
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные<br> консультатны подберут для вас наиболее
+               выгодные<br>условия кредита. Выгодные для нашего банка, разумеется.</b></p>
+         </section>
+
+      </section>
+
+      <ul>
+         <li><a href="https://www.dji.com/"><img src="img/logo-1.png"></a></li>
+         <li><a href="http://www.sp-gadgets.com/"><img src="img/logo-2.png"></a></li>
+         <li><a href="https://gopro.com/en/us/"><img src="img/logo-3.png"></a></li>
+         <li><a href="https://www.vive.com/en/"><img src="img/logo-4.png"></a></li>
+      </ul>
+
+      <article>
+         <h1>О нас</h1>
+
+         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
+         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVIVE работает со многими транспортными
+            компаниями.</p>
+
+         <ul>
+            <li><a>Деловые линии</a></li>
+            <li><a>Автотрейдинг</a></li>
+            <li><a>ЖелДорЭкспедиция</a></li>
+         </ul>
+
+         <a href="about.html">ПОДРОБНО О НАС</a>
+      </article>
+
+      <article>
+         <h1>Контакты</h1>
+
+         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
+            Всякое бывает.</p>
+
+         <div style="width: 560px; height: 220px; background: gray;">
+            <img src="/img/map.png" alt="">
+         </div>
+
+         <button type="button">НАПИШИТЕ НАМ</button>
+      </article>
+
+   </main>
+
+   <footer>
+      <a><img src="img/logo2.png" width="163" height="35" alt="Логотип Device"></a>
+      <p>г.Москва, ул.Строителей 15</p>
+
+      <ul>
+         <li><a href="delivery.html">ДОСТАВКА</a></li>
+         <li><a href="warranty.html">ГАРАНТИЯ</a></li>
+         <li><a href="contacts.html">КОНТАКТЫ</a></li>
+      </ul>
+      <ul>
+         <li><a href="https://www.facebook.com/"><img src="/img/fb.png" alt="перейти в facebook"></a></li>
+         <li><a href="https://www.instagram.com/"><img src="/img/in.png" alt="перейти в instagramm"></a></li>
+         <li><a href="https://twitter.com/"><img src="/img/tw.png" alt="перейти в twitter"></a></li>
+      </ul>
+
+      <ul>
+         <li><button type="button">Валентин Петухов</button></li>
+         <li><button type="button">Выйти</button></li>
+         <li><button type="button">Войти</button></li>
+         <li><button type="button">Сравнить</button></li>
+         <li><a href="basket.html">Корзина</a></li>
+      </ul>
+
+      <p>Тел.:+7(495)495-95-95</p>
+
+      <a href="https://htmlacademy.ru/"><img src="/img/logo-html.png" alt="Перейти на сайт HTML Academy"></a>
+   </footer>
+
+</body>
+
 </html>
