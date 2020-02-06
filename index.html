@@ -4,6 +4,7 @@
 <head>
    <meta charset="utf-8">
    <title>Интернет магазин "DEVICE"</title>
+   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -12,17 +13,17 @@
       <a><img src="img/logo-device.svg" width="163" height="35" alt="интернет магазин Device"></a>
       <nav>
          <ul>
-            <li><button type="button">Поиск по сайту</button></li>
-            <li><button type="button">Валентин Петухов</button></li>
+            <li><img src="/img/search.svg"><button type="button">Поиск по сайту</button></li>
+            <li><img src="/img/user.svg"><button type="button">Валентин Петухов</button></li>
             <li><button type="button">Выйти</button></li>
             <li><button type="button">Войти</button></li>
-            <li><button type="button">Сравнить</button></li>
-            <li><a href="basket.html">Корзина</a></li>
+            <li><img src="/img/compare.svg"><button type="button">Сравнить</button></li>
+            <li><img src="/img/cart.svg"><a href="basket.html">Корзина</a></li>
          </ul>
       </nav>
       <nav>
          <ul>
-            <li><a href="catalog.html">КАТАЛОГ ТОВАРОВ</a></li>
+            <li><a href="catalog.html">КАТАЛОГ ТОВАРОВ <img src="img/plus.svg"></a></li>
             <li><a href="delivery.html">ДОСТАВКА</a></li>
             <li><a href="warranty.html">ГАРАНТИЯ</a></li>
             <li><a href="contacts.html">КОНТАКТЫ</a></li>
@@ -144,7 +145,7 @@
       </ul>
 
       <article>
-         <h1>О нас</h1>
+         <h2>О нас</h2>
 
          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVIVE работает со многими транспортными
@@ -160,7 +161,7 @@
       </article>
 
       <article>
-         <h1>Контакты</h1>
+         <h2>Контакты</h2>
 
          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
             Всякое бывает.</p>
@@ -190,17 +191,51 @@
       </ul>
 
       <ul>
-         <li><button type="button">Валентин Петухов</button></li>
+         <li><img src="/img/user.svg"><button type="button">Валентин Петухов</button></li>
          <li><button type="button">Выйти</button></li>
          <li><button type="button">Войти</button></li>
-         <li><button type="button">Сравнить</button></li>
-         <li><a href="basket.html">Корзина</a></li>
+         <li><img src="/img/compare.svg"><button type="button">Сравнить</button></li>
+         <li><img src="/img/cart.svg"><a href="basket.html">Корзина</a></li>
       </ul>
 
       <p>Тел.:+7(495)495-95-95</p>
 
       <a href="https://htmlacademy.ru/"><img src="/img/logo-html.svg" alt="Перейти на сайт HTML Academy"></a>
    </footer>
+
+   <section style="display:none">
+      <h2 class="visualy-hidden">Написать нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+         <p>
+            <label>
+               Ваше имя:
+               <input type="text" name="name" id="writetous-name" placeholder="Имя Фамилия">
+            </label>
+         </p>
+         <p>
+            <label>
+               Ваш e-mail:
+               <input type="text" name="email" id="writetous-email" placeholder="email@example.com">
+            </label>
+         </p>
+         <p>
+            <label>
+               Текст письма:
+               <textarea name="body" id="writetous-boby" rows="5"></textarea>
+            </label>
+         </p>
+         <button type="submit">Отправить</button>
+      </form>
+   </section>
+
+   <section style="display:none">
+      <h2 class="visualy-hidden">Как к нам проехать</h2>
+
+      <div style="width: 960px; height:559px; background: #eee;">
+         <img src="/img/map-big.png" alt="улица Строителей, 15">
+      </div>
+
+   </section>
 
 </body>
 
