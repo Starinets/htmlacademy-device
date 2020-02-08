@@ -8,3 +8,17 @@
 	width: 1px !important;
 	overflow: hidden;
 }
+
+.services-tab {
+   display: none;
+}
+
+.services-content {
+   display: none;
+}
+
+#services-tab1:checked~#services-tab1-content,
+#services-tab2:checked~#services-tab2-content,
+#services-tab3:checked~#services-tab3-content {
+  display: block;
+}

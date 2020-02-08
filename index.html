@@ -8,12 +8,13 @@
 </head>
 
 <body>
-
    <header>
       <a><img src="img/logo-device.svg" width="163" height="35" alt="интернет магазин Device"></a>
       <nav>
+         <form action="https://echo.htmlacademy.ru" method="post">
+            <img src="/img/search.svg"><input type="text" placeholder="Строка поиска"><button type="submit">Поиск по сайту</button>
+         </form>
          <ul>
-            <li><img src="/img/search.svg"><button type="button">Поиск по сайту</button></li>
             <li><img src="/img/user.svg"><button type="button">Валентин Петухов</button></li>
             <li><button type="button">Выйти</button></li>
             <li><button type="button">Войти</button></li>
@@ -37,7 +38,7 @@
 
       <section id="slider1">
          <img src="img/slider-1.png" width="384" height="486">
-         <h2>Делай селфи, как Бен Стиллер!</h2>
+         <h2>Делай селфи,<br> как Бен Стиллер!</h2>
          <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
          <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 киллограмм</p>
 
@@ -52,7 +53,7 @@
 
       <section id="slider2">
          <img src="img/slider-2.png" width="345" height="485">
-         <h2>Худеем<br>правльно!</h2>
+         <h2>Худеем<br> правльно!</h2>
          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 
          <button type="button">ПОДРОБНЕЕ</button>
@@ -110,29 +111,31 @@
       <section>
          <h2>Дополнительные услуги</h2>
 
-         <input type="radio" id="services-tab1" checked>
+         <input type="radio" class="services-tab" name="tab-btn" id="services-tab1" checked>
          <label for="services-tab1">ДОСТАВКА</label>
 
-         <input type="radio" id="services-tab2">
+         <input type="radio" class="services-tab" name="tab-btn" id="services-tab2">
          <label for="services-tab2">ГАРАНТИЯ</label>
 
-         <input type="radio" id="services-tab3">
+         <input type="radio" class="services-tab" name="tab-btn" id="services-tab3">
          <label for="services-tab3">КРЕДИТ</label>
 
-         <section id="services-tab1-content">
+         <section class="services-content" id="services-tab1-content">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                заработает, поднимая его на ваш этаж.</p>
          </section>
-         <section id="services-tab2-content">
+
+         <section class="services-content" id="services-tab2-content">
             <h3>Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам
-               новый.<br>Товар, не дом конечно же</p>
+               новый.<br> Товар, не дом конечно же</p>
          </section>
-         <section id="services-tab3-content">
+
+         <section class="services-content" id="services-tab3-content">
             <h3>Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные<br> консультатны подберут для вас наиболее
-               выгодные<br>условия кредита. Выгодные для нашего банка, разумеется.</b></p>
+            <p>Залезть в долговую яму стало проще! Кредитные консультатны подберут для вас наиболее
+               выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
          </section>
 
       </section>
