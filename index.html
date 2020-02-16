@@ -9,7 +9,7 @@
 </head>
 
 <body>
-   <header class="header container">
+   <header class="header container test2">
       <a class="header-logo"><img src="img/logo-device.svg" width="163" height="35" alt="интернет магазин Device"></a>
 
       <nav class="flex-box">
@@ -252,32 +252,31 @@
       </section>>
    </footer>
 
-   <section style="display:none">
+   <section class="write-us-modal">
       <h2 class="visually-hidden">Написать нам</h2>
+      <img src="/img/modal-close.svg" width="55" height="55">
       <form action="https://echo.htmlacademy.ru" method="post">
-         <p>
-            <label>
-               Ваше имя:
-               <input type="text" name="name" id="writetous-name" placeholder="Имя Фамилия">
-            </label>
-         </p>
-         <p>
-            <label>
-               Ваш e-mail:
-               <input type="text" name="email" id="writetous-email" placeholder="email@example.com">
-            </label>
-         </p>
-         <p>
-            <label>
-               Текст письма:
-               <textarea name="body" id="writetous-boby" rows="5"></textarea>
-            </label>
-         </p>
+
+         <label class="">
+            Ваше имя:
+            <input type="text" name="name" id="writetous-name" placeholder="Имя Фамилия">
+         </label>
+
+         <label>
+            Ваш e-mail:
+            <input type="text" name="email" id="writetous-email" placeholder="email@example.com">
+         </label>
+
+         <label>
+            Текст письма:
+            <textarea name="body" id="writetous-boby" rows="5"></textarea>
+         </label>
+
          <button type="submit">Отправить</button>
       </form>
    </section>
 
-   <section style="display:none">
+   <section class="map-modal">
       <h2 class="visually-hidden">Как к нам проехать</h2>
 
       <div style="width: 960px; height:559px; background: #eee;">

@@ -96,6 +96,7 @@ a {
    width: 441px;
    height: 49px;
    background: url(/img/search.svg) no-repeat;
+   background-position: 5px;
    background-position-y: center;
    position: relative;
 }
@@ -921,6 +922,10 @@ a {
    justify-content: space-between;
 }
 
+.goods-item {
+   width: 360px;
+}
+
 .goods-item p {
    font-family: "Gilroy", "Tahoma", sans-serif;
    font-size: 18px;
@@ -1006,5 +1011,4 @@ a {
 .pagination-button-list.active {
    color: #000000;
 }
-
 
