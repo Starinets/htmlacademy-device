@@ -3,6 +3,8 @@
 * Студент: [Евгений Старинец](https://up.htmlacademy.ru/htmlcss/27/user/1340827).
 * Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/id6613).
 
+* онлайн ссылка: [DEVICE](https://starinets.github.io/1340827-device-27/).
+
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>

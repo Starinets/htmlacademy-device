@@ -78,6 +78,12 @@ a {
 	overflow: hidden;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* header */
 
 .header {
@@ -96,7 +102,7 @@ a {
    width: 441px;
    height: 49px;
    background: url(/img/search.svg) no-repeat;
-   background-position: 5px;
+   background-position: 3px;
    background-position-y: center;
    position: relative;
 }
@@ -511,7 +517,7 @@ a {
   text-align: left;
   color: #000000;
 }
-
+/*
 .about-button,
 .slide-button,
 .filters-button,
@@ -519,7 +525,7 @@ a {
 .send-button {
 
 }
-
+*/
 .yellow-transition {
    font-family: "Gilroy", "Tahoma", sans-serif;
    font-size: 18px;
@@ -686,10 +692,6 @@ a {
    margin-bottom: 5px;
 }
 
-.filter-checkbox {
-   display: none;
-}
-
 .filter-checkbox+label {
    font-family: "Open Sans", "Arial", sans-serif;
    font-size: 14px;
@@ -700,6 +702,10 @@ a {
    letter-spacing: 0.14px;
    text-align: left;
    color: #000000;
+}
+
+.filter-checkbox:focus+label {
+   outline: 2px solid;
 }
 
 .filter-checkbox+label::before {
@@ -755,10 +761,6 @@ a {
 
 .filter>li {
    margin-bottom: 5px;
-}
-
-.filter-radio {
-   display: none;
 }
 
 .filter-radio+label {
@@ -1012,3 +1014,21 @@ a {
    color: #000000;
 }
 
+
+/*
+.test1 {
+   background-color: rgb(102, 65, 93);
+}
+.test2 {
+   background-color: rgb(73, 65, 102);
+}
+
+*, *::after, *::before {
+   outline-style: dashed;
+   outline-color: darkorange;
+   outline-width: 1px;
+}
+
+body {
+   background-color: #555555;
+}
