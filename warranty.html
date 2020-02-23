@@ -9,38 +9,46 @@
 </head>
 
 <body>
-
    <header class="header container">
+      <nav class="user-navigation">
       <a class="header-logo" href="index.html"><img src="img/logo-device.svg" width="163" height="35"
             alt="перейти на главную страницу магазина"></a>
 
-      <nav class="flex-box">
-         <form class="header-search-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="header-search-input" type="text" name="search" placeholder="Поиск по сайту"
-               aria-label="Поиск по сайту">
-            <button class="header-search-button" type="submit">Найти</button>
-         </form>
-         <ul class="user-navigation-list">
-            <!-- <li class="user-navigation-item user=navigation-user"><img src="img/user.svg"><button type="button">Валентин Петухов</button></li>
-                     <li class="user-navigation-item user=navigation-login"><button type="button">Выйти</button></li> -->
-            <li class="user-navigation-item user-navigation-signin"><img src="img/user.svg"><button
-                  type="button">Войти</button></li>
-            <li class="user-navigation-item user-navigation-compare"><img src="img/compare.svg"><button
-                  type="button">Сравнить</button></li>
-            <li class="user-navigation-item user-navigation-cart"><img src="img/cart.svg"><a
-                  href="basket.html">Корзина</a>
-            </li>
-         </ul>
+      <form class="header-search-form" action="https://echo.htmlacademy.ru" method="post">
+         <input class="header-search-input" type="text" name="search" placeholder="Поиск по сайту"
+            aria-label="Поиск по сайту">
+         <button class="header-search-button" type="submit">Найти</button>
+      </form>
+      <ul class="user-navigation-list flex-box">
+         <!-- <li class="user-navigation-item user=navigation-user"><img src="img/user.svg"><button type="button">Валентин Петухов</button></li>
+                  <li class="user-navigation-item user=navigation-login"><button type="button">Выйти</button></li> -->
+         <li class="user-navigation-item user-navigation-signin"><button type="button">Войти</button></li>
+         <li class="user-navigation-item user-navigation-compare"><button type="button">Сравнить</button></li>
+         <li class="user-navigation-item user-navigation-cart"><a href="basket.html">Корзина</a></li>
+      </ul>
       </nav>
 
-      <nav class="flex-box">
+      <nav class="site-navigation">
          <ul class="site-navigation-list">
-            <li class="site-navigation-item"><a href="catalog.html">КАТАЛОГ ТОВАРОВ </a><img class="plus"
-                  src="img/plus.svg">
+            <li class="site-navigation-item site-navigation-catalog"><a href="catalog.html">КАТАЛОГ ТОВАРОВ </a>
+               <ul class="catalog-dropdown-list">
+                  <li class="catalog-dropdown-item">
+                     <a href="catalog.html">Виртуальная реальность</a>
+                     <a href="catalog.html">Моноподы для селфи</a>
+                     <a href="catalog.html">Экшн-камеры</a>
+                  </li>
+                  <li class="catalog-dropdown-item">
+                     <a href="catalog.html">Фитнес браслеты</a>
+                     <a href="catalog.html">Умные часы</a>
+                  </li>
+                  <li class="catalog-dropdown-item">
+                     <a href="catalog.html">Квадракоптеры</a>
+                  </li>
+               </ul>
             </li>
-            <li class="site-navigation-item"><a href="delivery.html">ДОСТАВКА</a></li>
-            <li class="site-navigation-item"><a href="warranty.html">ГАРАНТИЯ</a></li>
-            <li class="site-navigation-item"><a href="contacts.html">КОНТАКТЫ</a></li>
+            <li class="site-navigation-item site-navigation-delivery"><a href="delivery.html">ДОСТАВКА</a></li>
+            <li class="site-navigation-item site-navigation-warranty"><a href="warranty.html">ГАРАНТИЯ</a></li>
+            <li class="site-navigation-item site-navigation-contacts"><a href="contacts.html">КОНТАКТЫ</a></li>
          </ul>
       </nav>
    </header>
@@ -83,13 +91,13 @@
          <div class="flex-box bottom">
 
             <ul class="flex-box socials-list">
-               <li class="social-item"><a class="social-item-link" href="https://www.facebook.com/"><img src="img/fb.svg"
-                        alt="перейти в facebook"></a></li>
+               <li class="social-item"><a class="social-item-link" href="https://www.facebook.com/"><img
+                        src="img/fb.svg" alt="перейти в facebook"></a></li>
                <li class="social-item"><a class="social-item-link" href="https://www.instagram.com/"><img
                         src="img/instagram.svg" alt="перейти в instagramm"></a>
                </li>
-               <li class="social-item"><a class="social-item-link" href="https://twitter.com/"><img src="img/twitter.svg"
-                        alt="перейти в twitter"></a></li>
+               <li class="social-item"><a class="social-item-link" href="https://twitter.com/"><img
+                        src="img/twitter.svg" alt="перейти в twitter"></a></li>
             </ul>
 
             <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="img/logo-html.svg"
