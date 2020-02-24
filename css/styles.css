@@ -285,13 +285,19 @@ a {
 
 
 .footer {
-   padding-top: 60px;
+   padding-top: 68px;
 }
 
 .user-navigation-list.white {
    float: right;
    display: flex;
    justify-content: right;
+}
+
+.user-navigation-item.white button,
+.user-navigation-item.white a {
+   height: 20px;
+   line-height: 20px;;
 }
 
 .flex-box.white {
@@ -378,7 +384,7 @@ a {
    margin-right: 290px;
 }
 
-.site-navigation-catalog a::after {
+.site-navigation-catalog>a::after {
    content: "";
    display: inline-block;
    width: 16px;
@@ -387,6 +393,77 @@ a {
    background: url(/img/plus.svg) no-repeat;
    opacity: 0.3;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.site-navigation-catalog:hover>.catalog-dropdown-list,
+.site-navigation-catalog a:hover+.catalog-dropdown-list,
+.site-navigation-catalog a:focus+.catalog-dropdown-list {
+   position: absolute;
+   z-index: 10;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+   background-color: teal;
+}
+
+.catalog-dropdown-list {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   margin-right: 58px;
+   min-width: 180px;
+}
+
+.catalog-dropdown-item a {
+   font-family: "Open Sans", "Arial", sans-serif;
+   font-size: 15px;
+   font-weight: 300;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 2.4;
+   letter-spacing: 0.15px;
+   text-align: left;
+   color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .site-navigation-delivery {
    margin-right: 38px;
@@ -457,7 +534,7 @@ a {
 }
 
 .footer-first-line {
-   margin-bottom: 22px;
+   margin-bottom: 12px;
 }
 
 .flex-box.white {
@@ -680,6 +757,21 @@ a {
    position: absolute;
 }
 
+.slider-radio::before {
+   content: "";
+
+   display: block;
+   width: 12px;
+   height: 12px;
+
+   background-size: 100%;
+   background-image: url(/img/slider-button-empty.svg);
+}
+
+.slider-radio:checked::before {
+   background-image: url(/img/slider-button.svg);
+}
+
 .radio1 {
    right: 148px;
    bottom: 145px;
@@ -861,7 +953,7 @@ a {
 .tab-content {
    display: none;
    width: 760px;
-   padding-top: 80px;
+   padding-top: 72px;
 }
 
 .tab-content h3 {
@@ -876,7 +968,7 @@ a {
    color: #000000;
 
    margin-top: 0;
-   margin-bottom: 43px;
+   margin-bottom: 33px;
 }
 
 .tab-content p {
@@ -923,7 +1015,7 @@ a {
 .brands {
    list-style: none;
    margin-top: 0;
-   margin-bottom: 78px;
+   margin-bottom: 62px;
    padding: 0;
 
    display: flex;
@@ -968,6 +1060,7 @@ a {
    position: relative;
    width: 560px;
    min-height: 573px;
+   padding-bottom: 60px;
 }
 
 .about::before {
@@ -1000,21 +1093,50 @@ a {
 }
 
 .about p {
-   font: inherit;
+   font-family: "Open Sans", "Arial", sans-serif;
+   font-size: 15px;
+   font-weight: 300;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 2;
+   letter-spacing: normal;
+   text-align: left;
    color: #464646;
-   margin-bottom: 40px;
+   margin-bottom: 30px;
 }
 
-.about ul li {
-  font-family: "Gilroy", "Tahoma", sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.5;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000000;
+.about-list {
+   margin-right: 0;
+   padding-left: 0;
+   margin-top: 65px;
+
+   list-style-type: none;
+}
+
+.about-item {
+   font-family: "Gilroy", "Tahoma", sans-serif;
+   font-size: 16px;
+   font-weight: 800;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 2.5;
+   letter-spacing: normal;
+   text-align: left;
+   color: #000000;
+   padding-left: 37px;
+   position: relative;
+}
+
+.about-item::before {
+   content: "";
+   position: absolute;
+   top: 17px;
+   left: 0;
+   display: block;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   border: 2px solid #e5e5e5;
 }
 
 .about-button {
@@ -1024,10 +1146,18 @@ a {
    position: absolute;
    left: 20px;
    bottom: 0px;
+   text-transform: uppercase;
 }
 
 .about-us  {
    padding-right:85px;
+}
+
+.about-map {
+   width: 560px;
+   height: 220px;
+   background-color: #eeeeee;
+   margin-top: 40px;
 }
 
 /*
