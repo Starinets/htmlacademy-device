@@ -1,6 +1,6 @@
 
 function changeTab(evt, tabID) {
-   let i, x, tablinks;
+   var i, x, tablinks;
    x = document.getElementsByClassName("tab-content");
    for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";

@@ -1,3 +1,3 @@
 document.onload = function () {
-   let modalCloseButton = document.querySelectorAll('.close-modul-button');
+   let modalCloseButton = document.querySelectorAll('.close-modal-button');
 }
