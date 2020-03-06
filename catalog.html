@@ -11,7 +11,7 @@
 <body>
    <header class="header container">
       <nav class="user-navigation">
-         <a class="header-logo" href="index.html"><img src="img/logo-device.svg" width="163" height="35"
+         <a class="header-logo not-index-logo" href="index.html"><img src="img/logo-device.svg" width="163" height="35"
                alt="перейти на главную страницу магазина"></a>
 
          <form class="header-search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -20,9 +20,8 @@
             <button class="header-search-button" type="submit">Найти</button>
          </form>
          <ul class="user-navigation-list flex-box">
-            <!-- <li class="user-navigation-item user=navigation-user"><img src="img/user.svg"><button type="button">Валентин Петухов</button></li>
-                  <li class="user-navigation-item user=navigation-login"><button type="button">Выйти</button></li> -->
-            <li class="user-navigation-item user-navigation-signin"><button type="button">Войти</button></li>
+            <li class="user-navigation-item user-navigation-user"><button type="button">Валентин Петухов</button></li>
+            <li class="user-navigation-item user-navigation-signout"><button type="button">Выйти</button></li>
             <li class="user-navigation-item user-navigation-compare"><button type="button">Сравнить</button></li>
             <li class="user-navigation-item user-navigation-cart"><a href="basket.html">Корзина</a></li>
          </ul>
@@ -78,7 +77,7 @@
 
                   <fieldset class="cost-filters">
                      <legend>
-                        <p>Стоимость</p>
+                        Стоимость
                      </legend>
 
                      <div class="cost-range-wrapper">
@@ -99,7 +98,7 @@
 
                   <fieldset class="color-filters">
                      <legend>
-                        <p>Цвет</p>
+                        Цвет
                      </legend>
                      <ul class="filter">
                         <li>
@@ -132,9 +131,9 @@
 
                   <fieldset class="bluetooth-filters">
                      <legend>
-                        <p>Bluetooths</p>
+                        Bluetooths
                      </legend>
-                     <ul class="filter">
+                     <ul class="filter filter-bluetooth">
                         <li>
                            <input class="filter-radio visually-hidden" type="radio" name="bluetooth"
                               id="filter-radio-yes" checked>
@@ -148,9 +147,9 @@
                      </ul>
                   </fieldset>
 
-                  <a class="filters-button yellow-transition" type="submit">
+                  <button class="filters-button yellow-transition" type="submit">
                      Показать
-                  </a>
+                  </button>
                </form>
 
             </section>
@@ -166,84 +165,93 @@
                   </ul>
 
                   <ul class="flex-box goods-sorting-list goods-sorting-up-down">
-                     <a class="goods-sorting-button-up" href="#"></a>
-                     <a class="goods-sorting-button-down active"></a>
+                     <li><a class="goods-sorting-button-up" href="#"></a></li>
+                     <li><a class="goods-sorting-button-down active"></a></li>
                   </ul>
                </section>
 
-               <section class="flex-box goods-list">
+               <section>
                   <h3 class="visually-hidden">Товары выбранной категории</h3>
 
-                  <article class="goods-item">
-                     <img src="img/item-1.jpg" width="360" height="380">
+                  <div class="flex-box goods-list">
 
-                     <div class="goods-item-description">
-                        <a href="">Любительская селфи-палка</a>
-                        <span>500 руб.</span>
-                     </div>
+                     <article class="goods-item">
+                        <img src="img/item-1.jpg" width="360" height="380"
+                           alt="Телескопическая, металлическая селфи-палка">
 
-                     <div class="goods-item-hover-block">
-                        <a class="goods-item-hover-button yellow-transition" href="">В корзину</a>
-                        <a class="goods-item-hover-link" href="">Добавить к сравнению</a>
-                     </div>
-                  </article>
+                        <div class="goods-item-description">
+                           <a href="">Любительская селфи-палка</a>
+                           <span>500 руб.</span>
+                        </div>
 
-                  <article class="goods-item">
-                     <img src="img/item-2.jpg" width="360" height="380">
+                        <div class="goods-item-hover-block">
+                           <a class="goods-item-hover-button yellow-transition" href="">В корзину</a>
+                           <a class="goods-item-hover-link" href="">Добавить к сравнению</a>
+                        </div>
+                     </article>
 
-                     <div class="goods-item-description">
-                        <a href="">Профессиональная <span class="nobr">селфи-палка</span></a>
-                        <span>1 500 руб.</span>
-                     </div>
+                     <article class="goods-item">
+                        <img src="img/item-2.jpg" width="360" height="380"
+                           alt="телескопическая, прорезиненная селфи-палка">
 
-                     <div class="goods-item-hover-block">
-                        <a class="goods-item-hover-button yellow-transition" href="">В корзину</a>
-                        <a class="goods-item-hover-link" href="">Добавить к сравнению</a>
-                     </div>
-                  </article>
+                        <div class="goods-item-description">
+                           <a href="">Профессиональная <span class="nobr">селфи-палка</span></a>
+                           <span>1 500 руб.</span>
+                        </div>
 
-                  <article class="goods-item">
-                     <img src="img/item-3.jpg" width="360" height="380">
+                        <div class="goods-item-hover-block">
+                           <a class="goods-item-hover-button yellow-transition" href="">В корзину</a>
+                           <a class="goods-item-hover-link" href="">Добавить к сравнению</a>
+                        </div>
+                     </article>
 
-                     <div class="goods-item-description">
-                        <a href="">Непотопляемая селфи-палка</a>
-                        <span>2 500 руб.</span>
-                     </div>
+                     <article class="goods-item">
+                        <img src="img/item-3.jpg" width="360" height="380"
+                           alt="Желто-черная неопреновая ручка с воздушной капсулой внутри">
 
-                     <div class="goods-item-hover-block">
-                        <a class="goods-item-hover-button yellow-transition" href="">В корзину</a>
-                        <a class="goods-item-hover-link" href="">Добавить к сравнению</a>
-                     </div>
-                  </article>
+                        <div class="goods-item-description">
+                           <a href="">Непотопляемая селфи-палка</a>
+                           <span>2 500 руб.</span>
+                        </div>
 
-                  <article class="goods-item">
-                     <img src="img/item-4.jpg" width="360" height="380">
+                        <div class="goods-item-hover-block">
+                           <a class="goods-item-hover-button yellow-transition" href="">В корзину</a>
+                           <a class="goods-item-hover-link" href="">Добавить к сравнению</a>
+                        </div>
+                     </article>
 
-                     <div class="goods-item-description">
-                        <a href=""><span class="nobr">Селфи-палка "Следуй за</span> мной"</a>
-                        <span>4 900 руб.</span>
-                     </div>
+                     <article class="goods-item new">
+                        <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка исполненная в виде руки">
 
-                     <div class="goods-item-hover-block">
-                        <a class="goods-item-hover-button yellow-transition" href="">В корзину</a>
-                        <a class="goods-item-hover-link" href="">Добавить к сравнению</a>
-                     </div>
-                  </article>
+                        <div class="goods-item-description">
+                           <a href=""><span class="nobr">Селфи-палка «Следуй за</span> мной»</a>
+                           <span>4 900 руб.</span>
+                        </div>
+
+                        <div class="goods-item-hover-block">
+                           <a class="goods-item-hover-button yellow-transition" href="">В корзину</a>
+                           <a class="goods-item-hover-link" href="">Добавить к сравнению</a>
+                        </div>
+                     </article>
+
+                  </div>
 
                </section>
 
-               <section class="flex-box goods-pagination">
+               <section>
                   <h3 class="visually-hidden">Пагинация</h3>
 
-                  <a class="pagination-button" href="#">Назад</a>
+                  <div class="flex-box goods-pagination">
+                     <a class="pagination-button" href="#">Назад</a>
 
-                  <ul class="flex-box pagination-list">
-                     <li class="pagination-item"><a class="pagination-button-list active">1</a></li>
-                     <li class="pagination-item"><a class="pagination-button-list" href="#">2</a></li>
-                     <li class="pagination-item"><a class="pagination-button-list" href="#">3</a></li>
-                  </ul>
+                     <ul class="flex-box pagination-list">
+                        <li class="pagination-item"><a class="pagination-button-list active">1</a></li>
+                        <li class="pagination-item"><a class="pagination-button-list" href="#">2</a></li>
+                        <li class="pagination-item"><a class="pagination-button-list" href="#">3</a></li>
+                     </ul>
 
-                  <a class="pagination-button" href="#">Вперед</a>
+                     <a class="pagination-button" href="#">Вперед</a>
+                  </div>
                </section>
 
             </section>
@@ -257,16 +265,14 @@
       <section class="container">
 
          <div class="footer-first-line">
-            <a href="index.html"><img src="img/logo-device-yellow.svg" width="163" height="35"
+            <a class="not-index-logo" href="index.html"><img src="img/logo-device-yellow.svg" width="163" height="35"
                   alt="интернет магазин Device"></a>
 
 
             <ul class="user-navigation-list white">
-               <!-- <li class="user-navigation-item user=navigation-user"><img src="/img/user.svg"><button type="button">Валентин Петухов</button></li>
-                     <li class="user-navigation-item user=navigation-login"><button type="button">Выйти</button></li> -->
-               <li class="user-navigation-item user-navigation-signin white"><button type="button">Войти</button></li>
-               <li class="user-navigation-item user-navigation-compare white"><button type="button">Сравнить</button>
-               </li>
+               <li class="user-navigation-item user-navigation-user white"><button type="button">Валентин Петухов</button></li>
+               <li class="user-navigation-item user-navigation-signout white"><button type="button">Выйти</button></li>
+               <li class="user-navigation-item user-navigation-compare white"><button type="button">Сравнить</button></li>
                <li class="user-navigation-item user-navigation-cart white"><a href="basket.html">Корзина</a></li>
             </ul>
          </div>

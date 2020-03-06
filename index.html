@@ -20,8 +20,6 @@
             <button class="header-search-button" type="submit">Найти</button>
          </form>
          <ul class="user-navigation-list flex-box">
-            <!-- <li class="user-navigation-item user=navigation-user"><img src="img/user.svg"><button type="button">Валентин Петухов</button></li>
-            <li class="user-navigation-item user=navigation-login"><button type="button">Выйти</button></li> -->
             <li class="user-navigation-item user-navigation-signin"><button type="button">Войти</button></li>
             <li class="user-navigation-item user-navigation-compare"><button type="button">Сравнить</button></li>
             <li class="user-navigation-item user-navigation-cart"><a href="basket.html">Корзина</a></li>
@@ -58,12 +56,17 @@
       <h1 class="visually-hidden">Интернет магазин "DEVICE"</h1>
 
       <section class="container slider-container">
+         <h2 class="visually-hidden">Самое популярное</h2>
 
-         <input type="radio" class="slider-radio radio1" name="slider-radio" id="radio-slider1" aria-label="палка для селфи" checked>
-         <input type="radio" class="slider-radio radio2" name="slider-radio" id="radio-slider2" aria-label="фитнес браслет">
-         <input type="radio" class="slider-radio radio3" name="slider-radio" id="radio-slider3" aria-label="большой квадракоптер">
+         <input type="radio" class="slider-radio radio1" name="slider-radio" id="radio-slider1"
+            aria-label="палка для селфи" checked>
+         <input type="radio" class="slider-radio radio2" name="slider-radio" id="radio-slider2"
+            aria-label="фитнес браслет">
+         <input type="radio" class="slider-radio radio3" name="slider-radio" id="radio-slider3"
+            aria-label="большой квадракоптер">
 
-         <section class="slider-section" id="slider1">
+         <section class="slider-section slider1" id="slider1">
+            <h3 class="visually-hidden">Монопод</h3>
             <div class="slide-image-container">
                <img class="slide-image" src="img/slider-1.png" width="384" height="486"
                   alt="телескопическия селфи палка">
@@ -73,7 +76,7 @@
 
                <div class="slide-number">01</div>
 
-               <h2 class="slide-header">Делай селфи,<br> как Бен Стиллер!</h2>
+               <h4 class="slide-header">Делай селфи,<br> как Бен Стиллер!</h4>
                <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. <br>
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм</p>
 
@@ -98,7 +101,8 @@
 
          </section>
 
-         <section class="slider-section" id="slider2">
+         <section class="slider-section slider2" id="slider2">
+            <h3 class="visually-hidden">Фитнес-браслет</h3>
             <div class="slide-image-container">
                <img class="slide-image" src="img/slider-2.png" width="345" height="485"
                   alt="стильный фтьнес-браслет небольшого размера">
@@ -108,7 +112,7 @@
 
                <div class="slide-number">02</div>
 
-               <h2 class="slide-header">Худеем<br> правильно!</h2>
+               <h4 class="slide-header">Худеем<br> правильно!</h4>
                <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
                   и соблюдать диету.</p>
 
@@ -125,7 +129,8 @@
 
          </section>
 
-         <section class="slider-section" id="slider3">
+         <section class="slider-section slider3" id="slider3">
+            <h3 class="visually-hidden">Квадрокоптер</h3>
             <div class="slide-image-container">
                <img class="slide-image" src="img/slider-3.png" width="526" height="334"
                   alt="большой квадракоптер, на который даже вороны не нападают">
@@ -135,7 +140,7 @@
 
                <div class="slide-number">03</div>
 
-               <h2 class="slide-header">Пархает как бабочка, жалит как пчела!</h2>
+               <h4 class="slide-header">Пархает как бабочка, жалит как пчела!</h4>
                <p class="slide-description">Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                   замаскерованный под стандартную камеру.
                </p>
@@ -171,7 +176,7 @@
                   <div class="category-wrapper"><img class="category-item-img bottom-position" src="img/popular-2.svg"
                         alt="Моноподы для тех, у кого трясутся руки по утрам">
                   </div>
-                  <p>Моноподы для селфи</p>
+                  <p>Моноподы <span class="nobr">для селфи</span></p>
                </a></li>
             <li class="category-item"><a class="category-item-link" href="#">
                   <div class="category-wrapper"><img class="category-item-img" src="img/popular-3.svg"
@@ -198,7 +203,7 @@
 
       <section class="services">
 
-         <div class="container d1">
+         <div class="container">
 
             <h2 class="visually-hidden">Дополнительные услуги</h2>
 
@@ -280,13 +285,13 @@
                покупки.
                Всякое бывает.</p>
 
-            <div class="about-map">
-               <img src="img/map.png" width="560px" height="220px"  alt="улица Строителей, 15">
+            <div class="about-map map-show">
+               <img src="img/map.png" width="560" height="220" alt="улица Строителей, 15">
             </div>
 
-            <button class="about-button yellow-transition" type="button">Напишите нам</button>
+            <button class="about-button yellow-transition write-us-show" type="button">Напишите нам</button>
          </article>
-      </section>>
+      </section>
 
    </main>
 
@@ -298,8 +303,6 @@
 
 
             <ul class="user-navigation-list white">
-               <!-- <li class="user-navigation-item user=navigation-user"><img src="/img/user.svg"><button type="button">Валентин Петухов</button></li>
-               <li class="user-navigation-item user=navigation-login"><button type="button">Выйти</button></li> -->
                <li class="user-navigation-item user-navigation-signin white"><button type="button">Войти</button></li>
                <li class="user-navigation-item user-navigation-compare white"><button type="button">Сравнить</button>
                </li>
@@ -349,23 +352,24 @@
    <section class="write-us-modal">
       <h2 class="visually-hidden">Написать нам</h2>
 
-      <img class="close-modal-button" src="img/modal-close.svg" width="55" height="55">
+      <img class="close-modal-button write-as-modal-close" src="img/modal-close.svg" width="55" height="55"
+         alt="Закрыть форму обратной связи">
 
       <form action="https://echo.htmlacademy.ru" method="post">
 
          <label class="write-as-modal-label name">
             Ваше имя:
-            <input type="text" name="name" id="writetous-name" placeholder="Имя Фамилия">
+            <input type="text" name="name" class="writetous-name" id="writetous-name" placeholder="Имя Фамилия">
          </label>
 
          <label class="write-as-modal-label email">
             Ваш e-mail:
-            <input type="text" name="email" id="writetous-email" placeholder="email@example.com">
+            <input type="email" name="email" class="writetous-email" id="writetous-email" placeholder="email@example.com">
          </label>
 
          <label class="write-as-modal-label body">
             Текст письма:
-            <textarea name="body" id="writetous-boby" rows="5" placeholder="В свободной форме" resize: none;></textarea>
+            <textarea name="body" class="writetous-body" id="writetous-boby" rows="5" placeholder="В свободной форме"></textarea>
          </label>
 
          <button class="write-as-modal-submit yellow-transition" type="submit">Отправить</button>
@@ -376,12 +380,12 @@
    <section class="map-modal">
       <h2 class="visually-hidden">Как к нам проехать</h2>
 
-      <img class="close-modal-button" src="img/modal-close.svg" width="55" height="55">
+      <img class="close-modal-button map-modal-close" src="img/modal-close.svg" width="55" height="55" alt="Закрыть карту проезда">
 
-      <div style="width: 960px; height:559px; background: #eee;">
+      <div class="map-modal-wrapper">
          <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.141421450491!2d37.528035495549226!3d55.68652899449554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2skz!4v1582118344643!5m2!1sru!2skz"
-            width="960" height="559" frameborder="0" style="border:0;" allowfullscreen="">
+            width="960" height="559" allowfullscreen="">
          </iframe>
       </div>
 
@@ -389,6 +393,7 @@
 
 
    <script src="js/tabs.js"></script>
+   <script src="js/modal.js"></script>
 </body>
 
 </html>

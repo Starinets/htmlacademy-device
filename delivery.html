@@ -11,7 +11,7 @@
 <body>
    <header class="header container">
       <nav class="user-navigation">
-         <a class="header-logo" href="index.html"><img src="img/logo-device.svg" width="163" height="35"
+         <a class="header-logo not-index-logo" href="index.html"><img src="img/logo-device.svg" width="163" height="35"
                alt="перейти на главную страницу магазина"></a>
 
          <form class="header-search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -20,10 +20,9 @@
             <button class="header-search-button" type="submit">Найти</button>
          </form>
          <ul class="user-navigation-list flex-box">
-            <!-- <li class="user-navigation-item user=navigation-user"><img src="img/user.svg"><button type="button">Валентин Петухов</button></li>
-                  <li class="user-navigation-item user=navigation-login"><button type="button">Выйти</button></li> -->
-            <li class="user-navigation-item user-navigation-signin"><button class="user-navigation-button" type="button">Войти</button></li>
-            <li class="user-navigation-item user-navigation-compare"><button class="user-navigation-button" type="button">Сравнить</button></li>
+            <li class="user-navigation-item user-navigation-user"><button type="button">Валентин Петухов</button></li>
+            <li class="user-navigation-item user-navigation-signout"><button type="button">Выйти</button></li>
+            <li class="user-navigation-item user-navigation-compare"><button type="button">Сравнить</button></li>
             <li class="user-navigation-item user-navigation-cart"><a href="basket.html">Корзина</a></li>
          </ul>
       </nav>
@@ -55,22 +54,26 @@
 
    <main>
 
+      <h1 class="visually-hidden">Интернет магазин "DEVICE"</h1>
+
+      <section class="container">
+         <p> </p>
+      </section>>
+
    </main>
 
    <section class="footer">
       <section class="container">
 
          <div class="footer-first-line">
-            <a href="index.html"><img src="img/logo-device-yellow.svg" width="163" height="35"
+            <a class="not-index-logo" href="index.html"><img src="img/logo-device-yellow.svg" width="163" height="35"
                   alt="интернет магазин Device"></a>
 
 
             <ul class="user-navigation-list white">
-               <!-- <li class="user-navigation-item user=navigation-user"><img src="/img/user.svg"><button type="button">Валентин Петухов</button></li>
-                     <li class="user-navigation-item user=navigation-login"><button type="button">Выйти</button></li> -->
-               <li class="user-navigation-item user-navigation-signin white"><button type="button">Войти</button></li>
-               <li class="user-navigation-item user-navigation-compare white"><button type="button">Сравнить</button>
-               </li>
+               <li class="user-navigation-item user-navigation-user white"><button type="button">Валентин Петухов</button></li>
+               <li class="user-navigation-item user-navigation-signout white"><button type="button">Выйти</button></li>
+               <li class="user-navigation-item user-navigation-compare white"><button type="button">Сравнить</button></li>
                <li class="user-navigation-item user-navigation-cart white"><a href="basket.html">Корзина</a></li>
             </ul>
          </div>
