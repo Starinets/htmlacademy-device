@@ -102,7 +102,7 @@ a {
 
 .header-logo {
    position: absolute;
-   top: -17px;
+   top: -18px;
    left: 59px;
 }
 
@@ -194,7 +194,7 @@ a {
    display: inline-block;
    height: 49px;
    line-height: 49px;
-   vertical-align: top;
+   vertical-align: middle;
 }
 
 .user-navigation-item button:hover,
@@ -921,7 +921,7 @@ a {
 }
 
 .services-flex {
-   padding-bottom: 70px;
+   padding-bottom: 67px;
    z-index: 1;
 }
 
@@ -930,7 +930,7 @@ a {
    border-right: 7px solid #000000;
    min-height: 319px;
    margin-right: 116px;
-   padding-top: 80px;
+   padding-top: 78px;
    z-index: 1;
 }
 
@@ -1070,7 +1070,7 @@ a {
 .brands {
    list-style: none;
    margin-top: 0;
-   margin-bottom: 60px;
+   margin-bottom: 63px;
    padding: 0;
 
    display: -webkit-box;
@@ -1116,7 +1116,7 @@ a {
 
 .about {
    position: relative;
-   width: 560px;
+   width: 561px;
    min-height: 573px;
    padding-bottom: 60px;
 }
@@ -1212,6 +1212,7 @@ a {
 }
 
 .about-us  {
+   margin-left: -2px;
    padding-right:85px;
 }
 
