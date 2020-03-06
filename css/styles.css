@@ -1,31 +1,31 @@
 @font-face {
    font-family: "Open Sans";
-   src: url("/fonts/opensanslight.woff2") format("woff2"),
-   url("/fonts/opensanslight.woff") format("woff");
+   src: url("../fonts/opensanslight.woff2") format("woff2"),
+   url("../fonts/opensanslight.woff") format("woff");
    font-weight: 300;
    font-style: normal;
 }
 
 @font-face {
    font-family: "Open Sans";
-   src: url("/fonts/opensans.woff2") format("woff2"),
-   url("/fonts/opensans.woff") format("woff");
+   src: url("../fonts/opensans.woff2") format("woff2"),
+   url("../fonts/opensans.woff") format("woff");
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: "Gilroy";
-   src: url("/fonts/gilroylight.woff2") format("woff2"),
-   url("/fonts/gilroylight.woff") format("woff");
+   src: url("../fonts/gilroylight.woff2") format("woff2"),
+   url("../fonts/gilroylight.woff") format("woff");
    font-weight: 300;
    font-style: normal;
 }
 
 @font-face {
    font-family: "Gilroy";
-   src: url("/fonts/gilroyextrabold.woff2") format("woff2"),
-   url("/fonts/gilroyextrabold.woff") format("woff");
+   src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+   url("../fonts/gilroyextrabold.woff") format("woff");
    font-weight: 800;
    font-style: normal;
 }
@@ -109,7 +109,7 @@ a {
 .header-search-form{
    width: 441px;
    height: 49px;
-   background: url(/img/search.svg) no-repeat;
+   background: url(../img/search.svg) no-repeat;
    background-position: 3px;
    background-position-y: center;
    position: relative;
@@ -268,7 +268,7 @@ a {
    height: 12px;
    margin-right: 14px;
    vertical-align: baseline;
-   background: url(/img/user.svg) no-repeat;
+   background: url(../img/user.svg) no-repeat;
 }
 
 .user-navigation-signin button::before {
@@ -278,7 +278,7 @@ a {
    height: 12px;
    margin-right: 14px;
    vertical-align: baseline;
-   background: url(/img/user.svg) no-repeat;
+   background: url(../img/user.svg) no-repeat;
 }
 
 .user-navigation-compare button::before {
@@ -288,7 +288,7 @@ a {
    height: 10px;
    margin-right: 10px;
    vertical-align: baseline;
-   background: url(/img/compare.svg) no-repeat;
+   background: url(../img/compare.svg) no-repeat;
 }
 
 .user-navigation-cart a::before {
@@ -298,7 +298,7 @@ a {
    height: 12px;
    margin-right: 12px;
    vertical-align: baseline;
-   background: url(/img/cart.svg) no-repeat;
+   background: url(../img/cart.svg) no-repeat;
 }
 
 .footer {
@@ -350,20 +350,20 @@ a {
 }
 
 .user-navigation-user.white button::before {
-   background: url(/img/user-yellow.svg) no-repeat;
+   background: url(../img/user-yellow.svg) no-repeat;
 }
 
 .user-navigation-signin.white button::before {
-   background: url(/img/user-yellow.svg) no-repeat;
+   background: url(../img/user-yellow.svg) no-repeat;
 }
 
 .user-navigation-compare.white button::before {
-   background: url(/img/compare-yellow.svg) no-repeat;
+   background: url(../img/compare-yellow.svg) no-repeat;
 }
 
 .user-navigation-cart.white a::before {
 
-   background: url(/img/cart-yellow.svg) no-repeat;
+   background: url(../img/cart-yellow.svg) no-repeat;
 }
 
 .footer-navigation-list {
@@ -421,7 +421,7 @@ a {
    width: 16px;
    height: 16px;
    vertical-align: baseline;
-   background: url(/img/plus.svg) no-repeat;
+   background: url(../img/plus.svg) no-repeat;
    opacity: 0.3;
 }
 
@@ -784,11 +784,11 @@ a {
    height: 12px;
 
    background-size: 100%;
-   background-image: url(/img/slider-button-empty.svg);
+   background-image: url(../img/slider-button-empty.svg);
 }
 
 .slider-radio:checked::before {
-   background-image: url(/img/slider-button.svg);
+   background-image: url(../img/slider-button.svg);
 }
 
 .radio1 {
@@ -1040,7 +1040,7 @@ a {
    position: absolute;
    top: 85px;
    right: 66px;
-   background-image: url(/img/delivery.svg);
+   background-image: url(../img/delivery.svg);
 }
 
 .tab-warranty::before {
@@ -1051,7 +1051,7 @@ a {
    position: absolute;
    top: 85px;
    right: 66px;
-   background-image: url(/img/warranty.svg);
+   background-image: url(../img/warranty.svg);
 }
 
 .tab-credit::before {
@@ -1062,7 +1062,7 @@ a {
    position: absolute;
    top: 85px;
    right: 66px;
-   background-image: url(/img/credit.svg);
+   background-image: url(../img/credit.svg);
 }
 
 /* список брендов */
@@ -1094,22 +1094,22 @@ a {
 
 .dji:hover,
 .dji:focus {
-   background-image: url(/img/logo-1c.png);
+   background-image: url(../img/logo-1c.png);
 }
 
 .spgadgets:hover,
 .spgadgets:focus {
-   background-image: url(/img/logo-2c.png);
+   background-image: url(../img/logo-2c.png);
 }
 
 .gopro:hover,
 .gopro:focus {
-   background-image: url(/img/logo-3c.png);
+   background-image: url(../img/logo-3c.png);
 }
 
 .vive:hover,
 .vive:focus {
-   background-image: url(/img/logo-4c.png);
+   background-image: url(../img/logo-4c.png);
 }
 
 /* О нас */
@@ -1780,20 +1780,20 @@ a {
 }
 
 .filter-checkbox:not(:active):not(:checked)+label::before {
-   background: url(/img/checkbox-off.svg) no-repeat;
+   background: url(../img/checkbox-off.svg) no-repeat;
 }
 
 .filter-checkbox:not(:active):checked+label::before {
-   background: url(/img/checkbox-on.svg) no-repeat;
+   background: url(../img/checkbox-on.svg) no-repeat;
 }
 
 .filter-checkbox:active:not(:checked)+label::before {
-   background: url(/img/checkbox-on.svg) no-repeat;
+   background: url(../img/checkbox-on.svg) no-repeat;
    opacity: 1;
 }
 
 .filter-checkbox:active:checked+label::before {
-   background: url(/img/checkbox-off.svg) no-repeat;
+   background: url(../img/checkbox-off.svg) no-repeat;
    opacity: 1;
 }
 
@@ -1812,11 +1812,11 @@ a {
 }
 
 .filter-checkbox:disabled:checked+label::before {
-   background: url(/img/checkbox-on.svg) no-repeat;
+   background: url(../img/checkbox-on.svg) no-repeat;
 }
 
 .filter-checkbox:disabled:not(:checked)+label::before {
-   background: url(/img/checkbox-off.svg) no-repeat;
+   background: url(../img/checkbox-off.svg) no-repeat;
 }
 
 /* стилизация радио кнопок */
@@ -1843,20 +1843,20 @@ a {
 }
 
 .filter-radio:not(:active):not(:checked)+label::before {
-   background: url(/img/radio-off.svg) no-repeat;
+   background: url(../img/radio-off.svg) no-repeat;
 }
 
 .filter-radio:not(:active):checked+label::before {
-   background: url(/img/radio-on.svg) no-repeat;
+   background: url(../img/radio-on.svg) no-repeat;
 }
 
 .filter-radio:active:not(:checked)+label::before {
-   background: url(/img/radio-on.svg) no-repeat;
+   background: url(../img/radio-on.svg) no-repeat;
    opacity: 1;
 }
 
 .filter-radio:active:checked+label::before {
-   background: url(/img/radio-off.svg) no-repeat;
+   background: url(../img/radio-off.svg) no-repeat;
    opacity: 1;
 }
 
@@ -1875,11 +1875,11 @@ a {
 }
 
 .filter-radio:disabled:checked+label::before {
-   background: url(/img/radio-on.svg) no-repeat;
+   background: url(../img/radio-on.svg) no-repeat;
 }
 
 .filter-radio:disabled:not(:checked)+label::before {
-   background: url(/img/radio-off.svg) no-repeat;
+   background: url(../img/radio-off.svg) no-repeat;
 }
 
 /* список товаров */
@@ -1989,7 +1989,7 @@ a {
    width: 11px;
    height: 10px;
    vertical-align: middle;
-   background: url(/img/icon-up-dir.svg) no-repeat;
+   background: url(../img/icon-up-dir.svg) no-repeat;
 }
 
 .goods-sorting-button-down::before {
@@ -1998,7 +1998,7 @@ a {
    width: 11px;
    height: 10px;
    vertical-align: middle;
-   background: url(/img/icon-down-dir.svg) no-repeat;
+   background: url(../img/icon-down-dir.svg) no-repeat;
 }
 
 .goods-sorting-button-up:not(.active):hover,
