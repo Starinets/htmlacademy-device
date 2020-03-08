@@ -4,8 +4,8 @@
 <head>
    <meta charset="utf-8">
    <title>Интернет магазин "DEVICE"</title>
-   <link href="css/normalize.css" rel="stylesheet">
-   <link href="css/styles.css" rel="stylesheet">
+   <link href="css/normalize.min.css" rel="stylesheet">
+   <link href="css/styles.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
 
       <nav class="site-navigation">
          <ul class="site-navigation-list">
-            <li class="site-navigation-item site-navigation-catalog"><a href="catalog.html">КАТАЛОГ ТОВАРОВ </a>
+            <li class="site-navigation-item site-navigation-catalog" tabindex="0"><a>КАТАЛОГ ТОВАРОВ </a>
                <ul class="catalog-dropdown-list">
                   <li class="catalog-dropdown-item">
                      <a href="catalog.html">Виртуальная реальность</a>
@@ -364,12 +364,14 @@
 
          <label class="write-as-modal-label email">
             Ваш e-mail:
-            <input type="email" name="email" class="writetous-email" id="writetous-email" placeholder="email@example.com">
+            <input type="email" name="email" class="writetous-email" id="writetous-email"
+               placeholder="email@example.com">
          </label>
 
          <label class="write-as-modal-label body">
             Текст письма:
-            <textarea name="body" class="writetous-body" id="writetous-boby" rows="5" placeholder="В свободной форме"></textarea>
+            <textarea name="body" class="writetous-body" id="writetous-boby" rows="5"
+               placeholder="В свободной форме"></textarea>
          </label>
 
          <button class="write-as-modal-submit yellow-transition" type="submit">Отправить</button>
@@ -380,7 +382,8 @@
    <section class="map-modal">
       <h2 class="visually-hidden">Как к нам проехать</h2>
 
-      <img class="close-modal-button map-modal-close" src="img/modal-close.svg" width="55" height="55" alt="Закрыть карту проезда">
+      <img class="close-modal-button map-modal-close" src="img/modal-close.svg" width="55" height="55"
+         alt="Закрыть карту проезда">
 
       <div class="map-modal-wrapper">
          <iframe
@@ -392,8 +395,8 @@
    </section>
 
 
-   <script src="js/tabs.js"></script>
-   <script src="js/modal.js"></script>
+   <script src="js/tabs.min.js"></script>
+   <script src="js/modal.min.js"></script>
 </body>
 
 </html>
