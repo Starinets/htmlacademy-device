@@ -4,8 +4,8 @@
 <head>
    <meta charset="utf-8">
    <title>Интернет магазин "DEVICE"</title>
-   <link href="css/normalize.css" rel="stylesheet">
-   <link href="css/styles.css" rel="stylesheet">
+   <link href="css/normalize.min.css" rel="stylesheet">
+   <link href="css/styles.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,9 +21,9 @@
          </form>
 
          <ul class="user-navigation-list flex-box">
-            <li class="user-navigation-item user-navigation-user"><button type="button">Валентин Петухов</button></li>
-            <li class="user-navigation-item user-navigation-signout"><button type="button">Выйти</button></li>
-            <li class="user-navigation-item user-navigation-compare"><button type="button">Сравнить</button></li>
+            <li class="user-navigation-item user-navigation-user"><a href="">Валентин Петухов</a></li>
+            <li class="user-navigation-item user-navigation-signout"><a href="">Выйти</a></li>
+            <li class="user-navigation-item user-navigation-compare"><a href="">Сравнить</a></li>
             <li class="user-navigation-item user-navigation-cart"><a href="basket.html">Корзина</a></li>
          </ul>
       </nav>
@@ -86,8 +86,10 @@
                            <div class="cost-range-scale">
                               <div class="cost-range-bar"></div>
                            </div>
-                           <button class="cost-range-toggle cost-min-toggle" type="button" aria-label="перетяните для изменения минимальной цены"></button>
-                           <button class="cost-range-toggle cost-max-toggle" type="button" aria-label="перетяните для изменения максимальной цены"></button>
+                           <button class="cost-range-toggle cost-min-toggle" type="button"
+                              aria-label="перетяните для изменения минимальной цены"></button>
+                           <button class="cost-range-toggle cost-max-toggle" type="button"
+                              aria-label="перетяните для изменения максимальной цены"></button>
                         </div>
                         <div class="cost-range-price">
                            <label class="cost-min-price">от <input type="text" name="min-price" value="0"></label>
@@ -138,12 +140,12 @@
                         <li>
                            <input class="filter-radio visually-hidden" type="radio" name="bluetooth"
                               id="filter-radio-yes" checked>
-                           <label for="filter-radio-yes" tabindex="0">Есть</label>
+                           <label for="filter-radio-yes">Есть</label>
                         </li>
                         <li>
                            <input class="filter-radio visually-hidden" type="radio" name="bluetooth"
                               id="filter-radio-no">
-                           <label for="filter-radio-no" tabindex="0">Нет</label>
+                           <label for="filter-radio-no">Нет</label>
                         </li>
                      </ul>
                   </fieldset>
@@ -166,8 +168,10 @@
                   </ul>
 
                   <ul class="flex-box goods-sorting-list goods-sorting-up-down">
-                     <li><a class="goods-sorting-button-up" href="#" aria-label="сортировать товары по возрастанию"></a></li>
-                     <li><a class="goods-sorting-button-down active" aria-label="сортировать товары по убыванию"></a></li>
+                     <li><a class="goods-sorting-button-up" href="#" aria-label="сортировать товары по возрастанию"></a>
+                     </li>
+                     <li><a class="goods-sorting-button-down active" aria-label="сортировать товары по убыванию"></a>
+                     </li>
                   </ul>
                </section>
 
@@ -262,7 +266,7 @@
       </section>
    </main>
 
-   <section class="footer">
+   <footer class="footer">
       <section class="container">
 
          <div class="flex-box footer-first-line">
@@ -271,14 +275,14 @@
 
 
             <ul class="flex-box user-navigation-list white">
-               <li class="user-navigation-item user-navigation-user white"><button type="button">Валентин Петухов</button></li>
-               <li class="user-navigation-item user-navigation-signout white"><button type="button">Выйти</button></li>
-               <li class="user-navigation-item user-navigation-compare white"><button type="button">Сравнить</button></li>
+               <li class="user-navigation-item user-navigation-user white"><a href="">Валентин Петухов</a></li>
+               <li class="user-navigation-item user-navigation-signout white"><a href="">Выйти</a></li>
+               <li class="user-navigation-item user-navigation-compare white"><a href="">Сравнить</a></li>
                <li class="user-navigation-item user-navigation-cart white"><a href="basket.html">Корзина</a></li>
             </ul>
          </div>
 
-         <div class="flex-box white">
+         <div class="flex-box footer-second-line white">
             <div class="footer-address">
                <p class="address">г. Москва, ул. Строителей 15</p>
             </div>
@@ -299,9 +303,11 @@
             <div class="footer-line"></div>
 
             <ul class="flex-box socials-list">
-               <li class="social-item facebook"><a href="https://www.facebook.com/" aria-label="Наша сраничка в facebook">
+               <li class="social-item facebook"><a href="https://www.facebook.com/"
+                     aria-label="Наша сраничка в facebook">
                      facebook</a></li>
-               <li class="social-item instagram"><a href="https://www.instagram.com/" aria-label="Наша сраничка в instagram">
+               <li class="social-item instagram"><a href="https://www.instagram.com/"
+                     aria-label="Наша сраничка в instagram">
                      instagram</a></li>
                <li class="social-item twitter"><a href="https://twitter.com/" aria-label="Наша сраничка в twitter">
                      twitter</a></li>
@@ -313,8 +319,8 @@
             </div>
          </div>
 
-      </section>>
-   </section>
+      </section>
+   </footer>
 
 </body>
 

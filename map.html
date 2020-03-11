@@ -4,8 +4,8 @@
 <head>
    <meta charset="utf-8">
    <title>Интернет магазин "DEVICE"</title>
-   <link href="css/normalize.css" rel="stylesheet">
-   <link href="css/styles.css" rel="stylesheet">
+   <link href="css/normalize.min.css" rel="stylesheet">
+   <link href="css/styles.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,16 +21,16 @@
          </form>
 
          <ul class="user-navigation-list flex-box">
-            <li class="user-navigation-item user-navigation-user"><button type="button">Валентин Петухов</button></li>
-            <li class="user-navigation-item user-navigation-signout"><button type="button">Выйти</button></li>
-            <li class="user-navigation-item user-navigation-compare"><button type="button">Сравнить</button></li>
+            <li class="user-navigation-item user-navigation-user"><a href="">Валентин Петухов</a></li>
+            <li class="user-navigation-item user-navigation-signout"><a href="">Выйти</a></li>
+            <li class="user-navigation-item user-navigation-compare"><a href="">Сравнить</a></li>
             <li class="user-navigation-item user-navigation-cart"><a href="basket.html">Корзина</a></li>
          </ul>
       </nav>
 
       <nav class="site-navigation">
          <ul class="flex-box site-navigation-list">
-            <li class="site-navigation-item site-navigation-catalog"><a>КАТАЛОГ ТОВАРОВ </a>
+            <li class="site-navigation-item site-navigation-catalog"><a href="catalog.html">КАТАЛОГ ТОВАРОВ </a>
                <ul class="catalog-dropdown-list">
                   <li class="catalog-dropdown-item">
                      <a href="catalog.html">Виртуальная реальность</a>
@@ -69,29 +69,28 @@
 
    </main>
 
-   <section class="footer">
+   <footer class="footer">
       <section class="container">
 
-         <div class="footer-first-line">
+         <div class="flex-box footer-first-line">
             <a class="not-index-logo" href="index.html"><img src="img/logo-device-yellow.svg" width="163" height="35"
                   alt="интернет магазин Device"></a>
 
-            <ul class="user-navigation-list white">
-               <li class="user-navigation-item user-navigation-user white"><button type="button">Валентин
-                     Петухов</button></li>
-               <li class="user-navigation-item user-navigation-signout white"><button type="button">Выйти</button></li>
-               <li class="user-navigation-item user-navigation-compare white"><button type="button">Сравнить</button>
-               </li>
+
+            <ul class="flex-box user-navigation-list white">
+               <li class="user-navigation-item user-navigation-user white"><a href="">Валентин Петухов</a></li>
+               <li class="user-navigation-item user-navigation-signout white"><a href="">Выйти</a></li>
+               <li class="user-navigation-item user-navigation-compare white"><a href="">Сравнить</a></li>
                <li class="user-navigation-item user-navigation-cart white"><a href="basket.html">Корзина</a></li>
             </ul>
          </div>
 
-         <div class="flex-box white">
+         <div class="flex-box footer-second-line white">
             <div class="footer-address">
                <p class="address">г. Москва, ул. Строителей 15</p>
             </div>
 
-            <ul class="footer-navigation-list white">
+            <ul class="flex-box footer-navigation-list white">
                <li class="footer-navigation-item"><a href="delivery.html">ДОСТАВКА</a></li>
                <li class="footer-navigation-item"><a href="warranty.html">ГАРАНТИЯ</a></li>
                <li class="footer-navigation-item"><a href="contacts.html">КОНТАКТЫ</a></li>
@@ -107,9 +106,11 @@
             <div class="footer-line"></div>
 
             <ul class="flex-box socials-list">
-               <li class="social-item facebook"><a href="https://www.facebook.com/" aria-label="Наша сраничка в facebook">
+               <li class="social-item facebook"><a href="https://www.facebook.com/"
+                     aria-label="Наша сраничка в facebook">
                      facebook</a></li>
-               <li class="social-item instagram"><a href="https://www.instagram.com/" aria-label="Наша сраничка в instagram">
+               <li class="social-item instagram"><a href="https://www.instagram.com/"
+                     aria-label="Наша сраничка в instagram">
                      instagram</a></li>
                <li class="social-item twitter"><a href="https://twitter.com/" aria-label="Наша сраничка в twitter">
                      twitter</a></li>
@@ -121,8 +122,8 @@
             </div>
          </div>
 
-      </section>>
-   </section>
+      </section>
+   </footer>
 
 </body>
 
