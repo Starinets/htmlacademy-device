@@ -22,7 +22,6 @@ function changeSlider(evt, sliderID) {
       slidersButton[i].className = slidersButton[i].className.replace(" checked", "");
       slidersSection[i].className = slidersSection[i].className.replace(" active", "");
    }
-   console.log(document.querySelector(sliderID).className);
    document.querySelector(sliderID).className += " active";
 
    if (evt != "") {
