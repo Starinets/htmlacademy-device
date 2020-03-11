@@ -4,13 +4,13 @@
 <head>
    <meta charset="utf-8">
    <title>Интернет магазин "DEVICE"</title>
-   <link href="css/normalize.min.css" rel="stylesheet">
-   <link href="css/styles.min.css" rel="stylesheet">
+   <link href="css/normalize.css" rel="stylesheet">
+   <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
    <header class="header container">
-      <nav class="user-navigation">
+      <nav class="flex-box user-navigation">
          <a class="header-logo not-index-logo" href="index.html"><img src="img/logo-device.svg" width="163" height="35"
                alt="перейти на главную страницу магазина"></a>
 
@@ -19,6 +19,7 @@
                aria-label="Поиск по сайту">
             <button class="header-search-button" type="submit">Найти</button>
          </form>
+
          <ul class="user-navigation-list flex-box">
             <li class="user-navigation-item user-navigation-user"><button type="button">Валентин Петухов</button></li>
             <li class="user-navigation-item user-navigation-signout"><button type="button">Выйти</button></li>
@@ -28,7 +29,7 @@
       </nav>
 
       <nav class="site-navigation">
-         <ul class="site-navigation-list">
+         <ul class="flex-box site-navigation-list">
             <li class="site-navigation-item site-navigation-catalog"><a href="catalog.html">КАТАЛОГ ТОВАРОВ </a>
                <ul class="catalog-dropdown-list">
                   <li class="catalog-dropdown-item">
@@ -99,18 +100,17 @@
             <div class="footer-line"></div>
 
             <ul class="flex-box socials-list">
-               <li class="social-item"><a class="social-item-link" href="https://www.facebook.com/"><img
-                        src="img/fb.svg" alt="перейти в facebook"></a></li>
-               <li class="social-item"><a class="social-item-link" href="https://www.instagram.com/"><img
-                        src="img/instagram.svg" alt="перейти в instagramm"></a>
-               </li>
-               <li class="social-item"><a class="social-item-link" href="https://twitter.com/"><img
-                        src="img/twitter.svg" alt="перейти в twitter"></a></li>
+               <li class="social-item facebook"><a href="https://www.facebook.com/" aria-label="Наша сраничка в facebook">
+                     facebook</a></li>
+               <li class="social-item instagram"><a href="https://www.instagram.com/" aria-label="Наша сраничка в instagram">
+                     instagram</a></li>
+               <li class="social-item twitter"><a href="https://twitter.com/" aria-label="Наша сраничка в twitter">
+                     twitter</a></li>
             </ul>
 
             <div class="htmlacademy-link-wrapper">
-               <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="img/logo-html.svg"
-                     alt="Перейти на сайт HTML Academy"></a>
+               <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg"
+                     alt="Перейти на сайт HTML Academy" width="27" height="35"></a>
             </div>
          </div>
 

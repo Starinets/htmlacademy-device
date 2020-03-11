@@ -4,13 +4,13 @@
 <head>
    <meta charset="utf-8">
    <title>Интернет магазин "DEVICE"</title>
-   <link href="css/normalize.min.css" rel="stylesheet">
-   <link href="css/styles.min.css" rel="stylesheet">
+   <link href="css/normalize.css" rel="stylesheet">
+   <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
    <header class="header container">
-      <nav class="user-navigation">
+      <nav class="flex-box user-navigation">
          <a class="header-logo"><img src="img/logo-device.svg" width="163" height="35"
                alt="интернет магазин Device"></a>
 
@@ -19,6 +19,7 @@
                aria-label="Поиск по сайту">
             <button class="header-search-button" type="submit">Найти</button>
          </form>
+
          <ul class="user-navigation-list flex-box">
             <li class="user-navigation-item user-navigation-signin"><button type="button">Войти</button></li>
             <li class="user-navigation-item user-navigation-compare"><button type="button">Сравнить</button></li>
@@ -27,7 +28,7 @@
       </nav>
 
       <nav class="site-navigation">
-         <ul class="site-navigation-list">
+         <ul class="flex-box site-navigation-list">
             <li class="site-navigation-item site-navigation-catalog" tabindex="0"><a>КАТАЛОГ ТОВАРОВ </a>
                <ul class="catalog-dropdown-list">
                   <li class="catalog-dropdown-item">
@@ -58,14 +59,14 @@
       <section class="container slider-container">
          <h2 class="visually-hidden">Самое популярное</h2>
 
-         <input type="radio" class="slider-radio radio1" name="slider-radio" id="radio-slider1"
-            aria-label="палка для селфи" checked>
-         <input type="radio" class="slider-radio radio2" name="slider-radio" id="radio-slider2"
-            aria-label="фитнес браслет">
-         <input type="radio" class="slider-radio radio3" name="slider-radio" id="radio-slider3"
-            aria-label="большой квадракоптер">
+         <button class="slider-radio radio1 checked" id="radio-slider1"
+            aria-label="палка для селфи"></button>
+         <button class="slider-radio radio2" id="radio-slider2"
+            aria-label="фитнес браслет"></button>
+         <button class="slider-radio radio3" id="radio-slider3"
+            aria-label="большой квадракоптер"></button>
 
-         <section class="slider-section slider1" id="slider1">
+         <section class="slider-section slider1 active" id="slider1">
             <h3 class="visually-hidden">Монопод</h3>
             <div class="slide-image-container">
                <img class="slide-image" src="img/slider-1.png" width="384" height="486"
@@ -77,7 +78,7 @@
                <div class="slide-number">01</div>
 
                <h4 class="slide-header">Делай селфи,<br> как Бен Стиллер!</h4>
-               <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. <br>
+               <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм</p>
 
                <a href="index.html" class="slide-button yellow-transition">ПОДРОБНЕЕ</a>
@@ -163,39 +164,37 @@
          </section>
 
       </section>
+
       <section class="container">
          <h2 class="visually-hidden">Популярные категории</h2>
 
          <ul class="categories-list">
             <li class="category-item"><a class="category-item-link" href="#">
-                  <div class="category-wrapper"><img class="category-item-img" src="img/popular-1.svg"
-                        alt="Каталог продукции для полного погружения"></div>
+                  <div class="category-wrapper category1" aria-label="Каталог продукции для виртуального погружения">
+                  </div>
                   <p>Виртуальная реальность</p>
                </a></li>
             <li class="category-item"><a class="category-item-link" href="#">
-                  <div class="category-wrapper"><img class="category-item-img bottom-position" src="img/popular-2.svg"
-                        alt="Моноподы для тех, у кого трясутся руки по утрам">
+                  <div class="category-wrapper category2" aria-label="Моноподы для тех, у кого трясутся руки по утрам">
                   </div>
                   <p>Моноподы <span class="nobr">для селфи</span></p>
                </a></li>
             <li class="category-item"><a class="category-item-link" href="#">
-                  <div class="category-wrapper"><img class="category-item-img" src="img/popular-3.svg"
-                        alt="Камеры которые помогут запечатлеть причину гибели"></div>
+                  <div class="category-wrapper category3"
+                     aria-label="Камеры которые помогут запечатлеть причину гибели"></div>
                   <p>Экшн-камеры</p>
                </a></li>
             <li class="category-item"><a class="category-item-link" href="#">
-                  <div class="category-wrapper"><img class="category-item-img" src="img/popular-4.svg"
-                        alt="Стоит надеть фитнес браслет наруку, как мышцы начнут рости"></div>
+                  <div class="category-wrapper category4"
+                     aria-label="Стоит надеть фитнес браслет на руку, как мышцы начнут рости"></div>
                   <p>Фитнес-браслеты</p>
                </a></li>
             <li class="category-item"><a class="category-item-link" href="#">
-                  <div class="category-wrapper"><img class="category-item-img" src="img/popular-5.svg"
-                        alt="Тут собраны часы поумнее некоторорых людей"></div>
+                  <div class="category-wrapper category5" aria-label="Тут собраны часы поумнее некоторорых людей"></div>
                   <p>Умные часы</p>
                </a></li>
             <li class="category-item"><a class="category-item-link" href="#">
-                  <div class="category-wrapper"><img class="category-item-img" src="img/popular-6.svg"
-                        alt="Хотел в детсве вертолет? Они тут"></div>
+                  <div class="category-wrapper category6" aria-label="Хотел в детсве вертолет? Они тут"></div>
                   <p>Квадракоптеры</p>
                </a></li>
          </ul>
@@ -211,9 +210,9 @@
 
                <section class="services-links">
 
-                  <button class="tablink" onclick="changeTab(event, 'tab-delivery')">Доставка</button>
-                  <button class="tablink" onclick="changeTab(event, 'tab-warranty')">Гарантия</button>
-                  <button class="tablink" onclick="changeTab(event, 'tab-credit')">Кредит</button>
+                  <button class="tablink tablink-delivery">Доставка</button>
+                  <button class="tablink tablink-warranty">Гарантия</button>
+                  <button class="tablink tablink-credit">Кредит</button>
 
                </section>
 
@@ -250,14 +249,14 @@
 
       <section class="container">
          <ul class="brands">
-            <li><a class="brand-item dji" href="https://www.dji.com/"><img src="img/logo-1.png"
-                     alt="перейти на сайт DJI" width="260" height="100"></a></li>
-            <li><a class="brand-item spgadgets" href="http://www.sp-gadgets.com/"><img src="img/logo-2.png"
-                     alt="перейти на сайт SP-Gadgets" width="260" height="100"></a></li>
-            <li><a class="brand-item gopro" href="https://gopro.com/en/us/"><img src="img/logo-3.png"
-                     alt="перейти на сайт GoPro" width="260" height="100"></a></li>
-            <li><a class="brand-item vive" href="https://www.vive.com/en/"><img src="img/logo-4.png"
-                     alt="перейти на сайт Vive" width="260" height="100"></a></li>
+            <li class="brand-item-li"><a class="brand-item dji" href="https://www.dji.com/" aria-label="перейти на сайт DJI">
+               <img src="img/logo-1.png" alt="перейти на сайт DJI" width="260" height="100"></a></li>
+            <li class="brand-item-li"><a class="brand-item spgadgets" href="http://www.sp-gadgets.com/" aria-label="перейти на сайт SP-Gadgets">
+               <img src="img/logo-2.png" alt="перейти на сайт SP-Gadgets" width="260" height="100"></a></li>
+            <li class="brand-item-li"><a class="brand-item gopro" href="https://gopro.com/en/us/" aria-label="перейти на сайт GoPro">
+               <img src="img/logo-3.png" alt="перейти на сайт GoPro" width="260" height="100"></a></li>
+            <li class="brand-item-li"><a class="brand-item vive" href="https://www.vive.com/en/" aria-label="перейти на сайт Vive">
+               <img src="img/logo-4.png" alt="перейти на сайт Vive" width="260" height="100"></a></li>
          </ul>
       </section>>
 
@@ -289,7 +288,7 @@
                <img src="img/map.png" width="560" height="220" alt="улица Строителей, 15">
             </a>
 
-            <button class="about-button yellow-transition write-us-show" type="button">Напишите нам</button>
+            <a class="about-button yellow-transition write-us-show" href="writeus.html">Напишите нам</a>
          </article>
       </section>
 
@@ -298,11 +297,11 @@
    <footer class="footer">
       <section class="container">
 
-         <div class="footer-first-line">
+         <div class="flex-box footer-first-line">
             <a><img src="img/logo-device-yellow.svg" width="163" height="35" alt="интернет магазин Device"></a>
 
 
-            <ul class="user-navigation-list white">
+            <ul class="flex-box user-navigation-list white">
                <li class="user-navigation-item user-navigation-signin white"><button type="button">Войти</button></li>
                <li class="user-navigation-item user-navigation-compare white"><button type="button">Сравнить</button>
                </li>
@@ -315,7 +314,7 @@
                <p class="address">г. Москва, ул. Строителей 15</p>
             </div>
 
-            <ul class="footer-navigation-list white">
+            <ul class="flex-box footer-navigation-list white">
                <li class="footer-navigation-item"><a href="delivery.html">ДОСТАВКА</a></li>
                <li class="footer-navigation-item"><a href="warranty.html">ГАРАНТИЯ</a></li>
                <li class="footer-navigation-item"><a href="contacts.html">КОНТАКТЫ</a></li>
@@ -331,18 +330,18 @@
             <div class="footer-line"></div>
 
             <ul class="flex-box socials-list">
-               <li class="social-item"><a class="social-item-link" href="https://www.facebook.com/"><img
-                        src="img/fb.svg" alt="перейти в facebook"></a></li>
-               <li class="social-item"><a class="social-item-link" href="https://www.instagram.com/"><img
-                        src="img/instagram.svg" alt="перейти в instagramm"></a>
-               </li>
-               <li class="social-item"><a class="social-item-link" href="https://twitter.com/"><img
-                        src="img/twitter.svg" alt="перейти в twitter"></a></li>
+               <li class="social-item facebook"><a href="https://www.facebook.com/"
+                     aria-label="Наша сраничка в facebook">
+                     facebook</a></li>
+               <li class="social-item instagram"><a href="https://www.instagram.com/"
+                     aria-label="Наша сраничка в instagram">
+                     instagram</a></li>
+               <li class="social-item twitter"><a href="https://twitter.com/" aria-label="Наша сраничка в twitter">
+                     twitter</a></li>
             </ul>
 
             <div class="htmlacademy-link-wrapper">
-               <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="img/logo-html.svg"
-                     alt="Перейти на сайт HTML Academy"></a>
+               <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на сайт HTML Academy" target="blank">HTML Academy</a>
             </div>
          </div>
 
@@ -355,7 +354,7 @@
       <img class="close-modal-button write-as-modal-close" src="img/modal-close.svg" width="55" height="55"
          alt="Закрыть форму обратной связи">
 
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="" action="https://echo.htmlacademy.ru" method="post">
 
          <label class="write-as-modal-label name">
             Ваше имя:
@@ -395,8 +394,8 @@
    </section>
 
 
-   <script src="js/tabs.min.js"></script>
-   <script src="js/modal.min.js"></script>
+   <script src="js/tabs.js"></script>
+   <script src="js/modal.js"></script>
 </body>
 
 </html>

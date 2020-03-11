@@ -4,13 +4,13 @@
 <head>
    <meta charset="utf-8">
    <title>Интернет магазин "DEVICE"</title>
-   <link href="css/normalize.min.css" rel="stylesheet">
-   <link href="css/styles.min.css" rel="stylesheet">
+   <link href="css/normalize.css" rel="stylesheet">
+   <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
    <header class="header container">
-      <nav class="user-navigation">
+      <nav class="flex-box user-navigation">
          <a class="header-logo not-index-logo" href="index.html"><img src="img/logo-device.svg" width="163" height="35"
                alt="перейти на главную страницу магазина"></a>
 
@@ -19,6 +19,7 @@
                aria-label="Поиск по сайту">
             <button class="header-search-button" type="submit">Найти</button>
          </form>
+
          <ul class="user-navigation-list flex-box">
             <li class="user-navigation-item user-navigation-user"><button type="button">Валентин Петухов</button></li>
             <li class="user-navigation-item user-navigation-signout"><button type="button">Выйти</button></li>
@@ -28,7 +29,7 @@
       </nav>
 
       <nav class="site-navigation">
-         <ul class="site-navigation-list">
+         <ul class="flex-box site-navigation-list">
             <li class="site-navigation-item site-navigation-catalog"><a href="catalog.html">КАТАЛОГ ТОВАРОВ </a>
                <ul class="catalog-dropdown-list">
                   <li class="catalog-dropdown-item">
@@ -83,10 +84,10 @@
                      <div class="cost-range-wrapper">
                         <div class="cost-range-controls">
                            <div class="cost-range-scale">
-                              <div style="width: 57%" class="cost-range-bar"></div>
+                              <div class="cost-range-bar"></div>
                            </div>
-                           <button class="cost-range-toggle cost-min-toggle" type="button"></button>
-                           <button class="cost-range-toggle cost-max-toggle" type="button"></button>
+                           <button class="cost-range-toggle cost-min-toggle" type="button" aria-label="перетяните для изменения минимальной цены"></button>
+                           <button class="cost-range-toggle cost-max-toggle" type="button" aria-label="перетяните для изменения максимальной цены"></button>
                         </div>
                         <div class="cost-range-price">
                            <label class="cost-min-price">от <input type="text" name="min-price" value="0"></label>
@@ -165,8 +166,8 @@
                   </ul>
 
                   <ul class="flex-box goods-sorting-list goods-sorting-up-down">
-                     <li><a class="goods-sorting-button-up" href="#"></a></li>
-                     <li><a class="goods-sorting-button-down active"></a></li>
+                     <li><a class="goods-sorting-button-up" href="#" aria-label="сортировать товары по возрастанию"></a></li>
+                     <li><a class="goods-sorting-button-down active" aria-label="сортировать товары по убыванию"></a></li>
                   </ul>
                </section>
 
@@ -264,12 +265,12 @@
    <section class="footer">
       <section class="container">
 
-         <div class="footer-first-line">
+         <div class="flex-box footer-first-line">
             <a class="not-index-logo" href="index.html"><img src="img/logo-device-yellow.svg" width="163" height="35"
                   alt="интернет магазин Device"></a>
 
 
-            <ul class="user-navigation-list white">
+            <ul class="flex-box user-navigation-list white">
                <li class="user-navigation-item user-navigation-user white"><button type="button">Валентин Петухов</button></li>
                <li class="user-navigation-item user-navigation-signout white"><button type="button">Выйти</button></li>
                <li class="user-navigation-item user-navigation-compare white"><button type="button">Сравнить</button></li>
@@ -282,7 +283,7 @@
                <p class="address">г. Москва, ул. Строителей 15</p>
             </div>
 
-            <ul class="footer-navigation-list white">
+            <ul class="flex-box footer-navigation-list white">
                <li class="footer-navigation-item"><a href="delivery.html">ДОСТАВКА</a></li>
                <li class="footer-navigation-item"><a href="warranty.html">ГАРАНТИЯ</a></li>
                <li class="footer-navigation-item"><a href="contacts.html">КОНТАКТЫ</a></li>
@@ -298,18 +299,17 @@
             <div class="footer-line"></div>
 
             <ul class="flex-box socials-list">
-               <li class="social-item"><a class="social-item-link" href="https://www.facebook.com/"><img
-                        src="img/fb.svg" alt="перейти в facebook"></a></li>
-               <li class="social-item"><a class="social-item-link" href="https://www.instagram.com/"><img
-                        src="img/instagram.svg" alt="перейти в instagramm"></a>
-               </li>
-               <li class="social-item"><a class="social-item-link" href="https://twitter.com/"><img
-                        src="img/twitter.svg" alt="перейти в twitter"></a></li>
+               <li class="social-item facebook"><a href="https://www.facebook.com/" aria-label="Наша сраничка в facebook">
+                     facebook</a></li>
+               <li class="social-item instagram"><a href="https://www.instagram.com/" aria-label="Наша сраничка в instagram">
+                     instagram</a></li>
+               <li class="social-item twitter"><a href="https://twitter.com/" aria-label="Наша сраничка в twitter">
+                     twitter</a></li>
             </ul>
 
             <div class="htmlacademy-link-wrapper">
-               <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="img/logo-html.svg"
-                     alt="Перейти на сайт HTML Academy"></a>
+               <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg"
+                     alt="Перейти на сайт HTML Academy" width="27" height="35"></a>
             </div>
          </div>
 
